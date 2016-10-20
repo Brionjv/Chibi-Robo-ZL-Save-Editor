@@ -1,23 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>
-    </ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{963B5A17-DAF3-4A17-A7C9-4150450A69CF}</ProjectGuid>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E54CECFB-3640-4B04-B964-8CF5E994B2E6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>Chibi_Robo_Zip_Lash_Save_Editor.My.MyApplication</StartupObject>
     <RootNamespace>Chibi_Robo_Zip_Lash_Save_Editor</RootNamespace>
     <AssemblyName>Chibi-Robo Zip Lash Save Editor</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -26,8 +23,8 @@
     <DocumentationFile>Chibi-Robo Zip Lash Save Editor.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
@@ -52,11 +49,8 @@
     <ApplicationIcon>chibi icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
     <Reference Include="PackageIO">
-      <HintPath>..\..\..\..\..\Downloads\PackageIO.dll</HintPath>
+      <HintPath>..\PackageIO.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -79,6 +73,7 @@
     <Import Include="System.Windows.Forms" />
     <Import Include="System.Linq" />
     <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.vb">
@@ -92,6 +87,30 @@
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
     <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.vb">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -117,6 +136,18 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -134,6 +165,91 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fond form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chibi-Robo_-_Zip_Lash2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rouage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fond bloc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pièces.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batterie v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\réacteur v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geant v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batterie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geant1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geant2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geant3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geant4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\réacteur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batterie1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batterie11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batterie2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batterie3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batterie4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batterie5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batteriev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\réacteur1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\réacteur2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\réacteur3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\réacteur4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\réacteur5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\réacteurv.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="chibi icon.ico" />

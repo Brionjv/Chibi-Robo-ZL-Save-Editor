@@ -1,0 +1,17 @@
+c:\users\brion\documents\visual studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\bin\Debug\Chibi-Robo Zip Lash Save Editor.exe.config
+c:\users\brion\documents\visual studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\bin\Debug\Chibi-Robo Zip Lash Save Editor.exe
+c:\users\brion\documents\visual studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\bin\Debug\Chibi-Robo Zip Lash Save Editor.pdb
+c:\users\brion\documents\visual studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\bin\Debug\Chibi-Robo Zip Lash Save Editor.xml
+c:\users\brion\documents\visual studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi_Robo_Zip_Lash_Save_Editor.Form1.resources
+c:\users\brion\documents\visual studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi_Robo_Zip_Lash_Save_Editor.Resources.resources
+c:\users\brion\documents\visual studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi-Robo Zip Lash Save Editor.vbproj.GenerateResource.Cache
+c:\users\brion\documents\visual studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi-Robo Zip Lash Save Editor.exe
+c:\users\brion\documents\visual studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi-Robo Zip Lash Save Editor.xml
+c:\users\brion\documents\visual studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi-Robo Zip Lash Save Editor.pdb
+c:\users\brion\documents\visual studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\bin\Debug\PackageIO.dll
+c:\users\brion\documents\visual studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi-Robo Zip Lash Save Editor.vbprojResolveAssemblyReference.cache
+c:\users\brion\documents\visual studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi_Robo_Zip_Lash_Save_Editor.Form2.resources
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi_Robo_Zip_Lash_Save_Editor.Form3.resources
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi_Robo_Zip_Lash_Save_Editor.Form4.resources
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi_Robo_Zip_Lash_Save_Editor.Form5.resources
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi_Robo_Zip_Lash_Save_Editor.Form6.resources

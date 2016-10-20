@@ -117,4 +117,77 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="fond bloc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fond bloc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="geant3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\geant3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pièces" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pièces.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fond form" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fond form.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="geant4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\geant4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="geant2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\geant2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="geant1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\geant1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chibi-Robo_-_Zip_Lash2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chibi-Robo_-_Zip_Lash2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="geant v" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\geant v.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rouage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rouage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="batterie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\batterie1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="batterie1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\batterie11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="batterie2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\batterie2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="batterie3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\batterie3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="batterie4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\batterie4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="batterie5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\batterie5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="batteriev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\batteriev.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="réacteur1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\réacteur1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="réacteur2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\réacteur2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="réacteur3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\réacteur3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="réacteur4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\réacteur4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="réacteur5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\réacteur5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="réacteurv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\réacteurv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -15,6 +15,102 @@ Chibi-RoboZipLashSaveEditor
   Remplace la propriété CurrentUICulture du thread actuel pour toutes
   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
 </summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.batterie">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.batterie1">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.batterie2">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.batterie3">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.batterie4">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.batterie5">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.batteriev">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.Chibi_Robo___Zip_Lash2">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.fond_bloc">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.fond_form">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.geant_v">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.geant1">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.geant2">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.geant3">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.geant4">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.panel">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.pièces">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.réacteur1">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.réacteur2">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.réacteur3">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.réacteur4">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.réacteur5">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.réacteurv">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources.rouage">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
 </member><member name="T:Chibi_Robo_Zip_Lash_Save_Editor.My.Resources.Resources">
 	<summary>
   Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
