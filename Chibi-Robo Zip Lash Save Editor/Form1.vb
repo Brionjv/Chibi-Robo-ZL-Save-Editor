@@ -688,7 +688,7 @@ Public Class Form1
             TabPage2.Text = "Extra"
             Label7.Text = "Inventaire"
             Label7.Location = New Point(37, 10)
-            CheckBox1.Text = "Débloquer l'accès l'étage"
+            CheckBox1.Text = "Débloquer l'accès à l'étage"
             CheckBox2.Text = "Débloquer toutes les infos des figurines"
             CheckBox3.Text = "Débloquer toutes les figurines"
             CheckBox4.Text = "Débloquer Monde 7-1"
@@ -2446,5 +2446,31 @@ Public Class Form1
             End If
             CheckBox4.Checked = False
         End Try
+    End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+        Form7.Show()
+    End Sub
+
+    Private Sub NumericUpDown12_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown12.ValueChanged
+        If NumericUpDown12.Value = 1 Then
+            PictureBox6.Image = My.Resources.M1
+        ElseIf NumericUpDown12.Value = 2 Then
+            PictureBox6.Image = My.Resources.M2
+        ElseIf NumericUpDown12.Value = 3 Then
+            PictureBox6.Image = My.Resources.M3
+        ElseIf NumericUpDown12.Value = 4 Then
+            PictureBox6.Image = My.Resources.M4
+        ElseIf NumericUpDown12.Value = 5 Then
+            PictureBox6.Image = My.Resources.M5
+        ElseIf NumericUpDown12.Value = 6 Then
+            PictureBox6.Image = My.Resources.M6
+        ElseIf NumericUpDown12.Value = 7 Then
+            PictureBox6.Image = My.Resources.M7
+        End If
+    End Sub
+
+    Private Sub Panel3_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel3.MouseMove, Label7.MouseMove
+
     End Sub
 End Class
