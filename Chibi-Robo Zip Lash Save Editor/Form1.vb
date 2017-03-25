@@ -1850,7 +1850,7 @@ Public Class Form1
             End If
         Catch Ex As Exception
             If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                fdialog.Label1.Text = "Load a save file before"
+                fdialog.Label1.Text = "Load a save file first"
                 fdialog.ShowDialog()
             End If
             If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
@@ -2280,7 +2280,7 @@ Public Class Form1
             End If
         Catch Ex As Exception
             If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                fdialog.Label1.Text = "Load a save file before"
+                fdialog.Label1.Text = "Load a save file first"
                 fdialog.ShowDialog()
             End If
             If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
@@ -2310,7 +2310,7 @@ Public Class Form1
             End If
         Catch Ex As Exception
             If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                fdialog.Label1.Text = "Load a save file before"
+                fdialog.Label1.Text = "Load a save file fist"
                 fdialog.ShowDialog()
             End If
             If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
@@ -2471,6 +2471,10 @@ Public Class Form1
     End Sub
 
     Private Sub Panel3_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel3.MouseMove, Label7.MouseMove
+
+    End Sub
+
+    Private Sub CheckBox7_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox7.CheckedChanged
 
     End Sub
 End Class
