@@ -461,6 +461,7 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox1.SelectedItem = ComboBox1.Items.Item(0)
+        ComboBox3.SelectedItem = ComboBox3.Items.Item(0)
         ComboBox1.Text = My.Settings.Langue
     End Sub
     Private Sub Form1_FormClosing(sender As Object, e As EventArgs) Handles MyBase.FormClosing
@@ -474,12 +475,13 @@ Public Class Form1
             Button2.Text = "Save"
             TabPage1.Text = "Main"
             TabPage2.Text = "Extra"
+            TabPage2.Text = "Worlds Edit"
             Label7.Text = "Inventory"
             Label7.Location = New Point(39, 10)
             CheckBox1.Text = "Access to the floor unlocked"
             CheckBox2.Text = "Unlock all figurines info."
             CheckBox3.Text = "Unlock all figurines"
-            CheckBox4.Text = "Unlock World 7-1"
+            CheckBox4.Text = "Unlock level 1"
             If NumericUpDown4.Value = 0 And NumericUpDown5.Value = 0 Then
                 Label1.Text = "0 - 0"
                 Label5.Text = "Shipping Out From the Station"
@@ -680,18 +682,26 @@ Public Class Form1
                 Label1.Text = "7 - 6"
                 Label5.Text = "Construktor Mk. ||, the Remodeled Rival"
             End If
+            ComboBox3.Items.Item(0) = "World 1"
+            ComboBox3.Items.Item(1) = "World 2"
+            ComboBox3.Items.Item(2) = "World 3"
+            ComboBox3.Items.Item(3) = "World 4"
+            ComboBox3.Items.Item(4) = "World 5"
+            ComboBox3.Items.Item(5) = "World 6"
+            ComboBox3.Items.Item(6) = "World 7"
         End If
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
             Button1.Text = "Ouvrir"
             Button2.Text = "Enregistrer"
             TabPage1.Text = "Principal"
             TabPage2.Text = "Extra"
+            TabPage3.Text = "Edition Mondes"
             Label7.Text = "Inventaire"
             Label7.Location = New Point(37, 10)
             CheckBox1.Text = "Débloquer l'accès à l'étage"
             CheckBox2.Text = "Débloquer toutes les infos des figurines"
             CheckBox3.Text = "Débloquer toutes les figurines"
-            CheckBox4.Text = "Débloquer Monde 7-1"
+            CheckBox4.Text = "Débloquer Niveau 1"
             If NumericUpDown4.Value = 0 And NumericUpDown5.Value = 0 Then
                 Label1.Text = "0 - 0"
                 Label5.Text = "En route pour la Terre"
@@ -892,6 +902,13 @@ Public Class Form1
                 Label1.Text = "7 - 6"
                 Label5.Text = "Brikolator 2.0, la nouvelle tête"
             End If
+            ComboBox3.Items.Item(0) = "Monde 1"
+            ComboBox3.Items.Item(1) = "Monde 2"
+            ComboBox3.Items.Item(2) = "Monde 3"
+            ComboBox3.Items.Item(3) = "Monde 4"
+            ComboBox3.Items.Item(4) = "Monde 5"
+            ComboBox3.Items.Item(5) = "Monde 6"
+            ComboBox3.Items.Item(6) = "Monde 7"
         End If
     End Sub
 
@@ -2423,21 +2440,101 @@ Public Class Form1
     Private Sub CheckBox4_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox4.CheckedChanged
         Try
             If CheckBox4.Checked = True Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                Writer.Position = &H690
-                Writer.WriteUInt16(1)
-                If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                    fdialog.Label1.Text = "The fisrt level of World 7 has been succesfully unlocked"
-                    fdialog.ShowDialog()
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(6) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    Writer.Position = &H690
+                    Writer.WriteUInt16(1)
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "The fisrt level of World 7 has been succesfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Le premier niveau du Monde 7 a été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
                 End If
-                If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
-                    fdialog.Label1.Text = "Le premier niveau du Monde 7 a été débloqué avec succès"
-                    fdialog.ShowDialog()
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(5) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    Writer.Position = &H674
+                    Writer.WriteUInt16(1)
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "The fisrt level of World 6 has been succesfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Le premier niveau du Monde 6 a été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(4) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    Writer.Position = &H658
+                    Writer.WriteUInt16(1)
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "The fisrt level of World 5 has been succesfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Le premier niveau du Monde 5 a été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    Writer.Position = &H63C
+                    Writer.WriteUInt16(1)
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "The fisrt level of World 4 has been succesfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Le premier niveau du Monde 4 a été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    Writer.Position = &H620
+                    Writer.WriteUInt16(1)
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "The fisrt level of World 3 has been succesfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Le premier niveau du Monde 3 a été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    Writer.Position = &H604
+                    Writer.WriteUInt16(1)
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "The fisrt level of World 2 has been succesfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Le premier niveau du Monde 2 a été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    Writer.Position = &H5E8
+                    Writer.WriteUInt16(1)
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "The fisrt level of World 1 has been succesfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Le premier niveau du Monde 1 a été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
                 End If
             End If
         Catch Ex As Exception
             If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                fdialog.Label1.Text = "Load a save file before"
+                fdialog.Label1.Text = "Load a save file first"
                 fdialog.ShowDialog()
             End If
             If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
@@ -2448,25 +2545,34 @@ Public Class Form1
         End Try
     End Sub
 
-    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
-        Form7.Show()
-    End Sub
-
     Private Sub NumericUpDown12_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown12.ValueChanged
         If NumericUpDown12.Value = 1 Then
             PictureBox6.Image = My.Resources.M1
-        ElseIf NumericUpDown12.Value = 2 Then
+
+        End If
+        If NumericUpDown12.Value = 2 Then
             PictureBox6.Image = My.Resources.M2
-        ElseIf NumericUpDown12.Value = 3 Then
+
+        End If
+        If NumericUpDown12.Value = 3 Then
             PictureBox6.Image = My.Resources.M3
-        ElseIf NumericUpDown12.Value = 4 Then
+
+        End If
+        If NumericUpDown12.Value = 4 Then
             PictureBox6.Image = My.Resources.M4
-        ElseIf NumericUpDown12.Value = 5 Then
+
+        End If
+        If NumericUpDown12.Value = 5 Then
             PictureBox6.Image = My.Resources.M5
-        ElseIf NumericUpDown12.Value = 6 Then
+
+        End If
+        If NumericUpDown12.Value = 6 Then
             PictureBox6.Image = My.Resources.M6
-        ElseIf NumericUpDown12.Value = 7 Then
+
+        End If
+        If NumericUpDown12.Value = 7 Then
             PictureBox6.Image = My.Resources.M7
+
         End If
     End Sub
 
@@ -2476,5 +2582,29 @@ Public Class Form1
 
     Private Sub CheckBox7_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox7.CheckedChanged
 
+    End Sub
+
+    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
+        If ComboBox3.SelectedItem = ComboBox3.Items.Item(0) Then
+            NumericUpDown12.Value = 1
+        End If
+        If ComboBox3.SelectedItem = ComboBox3.Items.Item(1) Then
+            NumericUpDown12.Value = 2
+        End If
+        If ComboBox3.SelectedItem = ComboBox3.Items.Item(2) Then
+            NumericUpDown12.Value = 3
+        End If
+        If ComboBox3.SelectedItem = ComboBox3.Items.Item(3) Then
+            NumericUpDown12.Value = 4
+        End If
+        If ComboBox3.SelectedItem = ComboBox3.Items.Item(4) Then
+            NumericUpDown12.Value = 5
+        End If
+        If ComboBox3.SelectedItem = ComboBox3.Items.Item(5) Then
+            NumericUpDown12.Value = 6
+        End If
+        If ComboBox3.SelectedItem = ComboBox3.Items.Item(6) Then
+            NumericUpDown12.Value = 7
+        End If
     End Sub
 End Class

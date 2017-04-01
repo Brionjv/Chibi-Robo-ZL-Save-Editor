@@ -15,4 +15,3 @@ C:\Users\Brion\Documents\Visual Studio 2012\Projects\Chibi-Robo Zip Lash Save Ed
 C:\Users\Brion\Documents\Visual Studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi_Robo_Zip_Lash_Save_Editor.Form4.resources
 C:\Users\Brion\Documents\Visual Studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi_Robo_Zip_Lash_Save_Editor.Form5.resources
 C:\Users\Brion\Documents\Visual Studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi_Robo_Zip_Lash_Save_Editor.Form6.resources
-C:\Users\Brion\Documents\Visual Studio 2012\Projects\Chibi-Robo Zip Lash Save Editor\Chibi-Robo Zip Lash Save Editor\obj\Debug\Chibi_Robo_Zip_Lash_Save_Editor.Form7.resources
