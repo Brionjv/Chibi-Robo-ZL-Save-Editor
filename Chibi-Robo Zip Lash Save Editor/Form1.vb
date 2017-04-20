@@ -482,6 +482,9 @@ Public Class Form1
             CheckBox2.Text = "Unlock all figurines info."
             CheckBox3.Text = "Unlock all figurines"
             CheckBox4.Text = "Unlock level 1"
+            CheckBox5.Text = "Unlock all levels"
+            CheckBox6.Text = "Delete all levels"
+            CheckBox7.Text = "All levels with all Chibi-tot and coins"
             If NumericUpDown4.Value = 0 And NumericUpDown5.Value = 0 Then
                 Label1.Text = "0 - 0"
                 Label5.Text = "Shipping Out From the Station"
@@ -702,6 +705,9 @@ Public Class Form1
             CheckBox2.Text = "Débloquer toutes les infos des figurines"
             CheckBox3.Text = "Débloquer toutes les figurines"
             CheckBox4.Text = "Débloquer Niveau 1"
+            CheckBox5.Text = "Débloquer les niveaux"
+            CheckBox6.Text = "Supprimer les niveaux"
+            CheckBox7.Text = "Débloquer les niveaux avec Chibi-tot et pièces"
             If NumericUpDown4.Value = 0 And NumericUpDown5.Value = 0 Then
                 Label1.Text = "0 - 0"
                 Label5.Text = "En route pour la Terre"
@@ -2445,91 +2451,98 @@ Public Class Form1
                     Writer.Position = &H690
                     Writer.WriteUInt16(1)
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                        fdialog.Label1.Text = "The fisrt level of World 7 has been succesfully unlocked"
+                        fdialog.Label1.Text = "The fisrt level of World 7 has been successfully unlocked"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
                         fdialog.Label1.Text = "Le premier niveau du Monde 7 a été débloqué avec succès"
                         fdialog.ShowDialog()
                     End If
+                    CheckBox4.Checked = False
                 End If
                 If ComboBox3.SelectedItem = ComboBox3.Items.Item(5) Then
                     Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
                     Writer.Position = &H674
                     Writer.WriteUInt16(1)
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                        fdialog.Label1.Text = "The fisrt level of World 6 has been succesfully unlocked"
+                        fdialog.Label1.Text = "The fisrt level of World 6 has been successfully unlocked"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
                         fdialog.Label1.Text = "Le premier niveau du Monde 6 a été débloqué avec succès"
                         fdialog.ShowDialog()
                     End If
+                    CheckBox4.Checked = False
                 End If
                 If ComboBox3.SelectedItem = ComboBox3.Items.Item(4) Then
                     Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
                     Writer.Position = &H658
                     Writer.WriteUInt16(1)
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                        fdialog.Label1.Text = "The fisrt level of World 5 has been succesfully unlocked"
+                        fdialog.Label1.Text = "The fisrt level of World 5 has been successfully unlocked"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
                         fdialog.Label1.Text = "Le premier niveau du Monde 5 a été débloqué avec succès"
                         fdialog.ShowDialog()
                     End If
+                    CheckBox4.Checked = False
                 End If
                 If ComboBox3.SelectedItem = ComboBox3.Items.Item(3) Then
                     Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
                     Writer.Position = &H63C
                     Writer.WriteUInt16(1)
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                        fdialog.Label1.Text = "The fisrt level of World 4 has been succesfully unlocked"
+                        fdialog.Label1.Text = "The fisrt level of World 4 has been successfully unlocked"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
                         fdialog.Label1.Text = "Le premier niveau du Monde 4 a été débloqué avec succès"
                         fdialog.ShowDialog()
                     End If
+                    CheckBox4.Checked = False
                 End If
                 If ComboBox3.SelectedItem = ComboBox3.Items.Item(2) Then
                     Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
                     Writer.Position = &H620
                     Writer.WriteUInt16(1)
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                        fdialog.Label1.Text = "The fisrt level of World 3 has been succesfully unlocked"
+                        fdialog.Label1.Text = "The fisrt level of World 3 has been successfully unlocked"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
                         fdialog.Label1.Text = "Le premier niveau du Monde 3 a été débloqué avec succès"
                         fdialog.ShowDialog()
                     End If
+                    CheckBox4.Checked = False
                 End If
                 If ComboBox3.SelectedItem = ComboBox3.Items.Item(1) Then
                     Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
                     Writer.Position = &H604
                     Writer.WriteUInt16(1)
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                        fdialog.Label1.Text = "The fisrt level of World 2 has been succesfully unlocked"
+                        fdialog.Label1.Text = "The fisrt level of World 2 has been successfully unlocked"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
                         fdialog.Label1.Text = "Le premier niveau du Monde 2 a été débloqué avec succès"
                         fdialog.ShowDialog()
                     End If
+                    CheckBox4.Checked = False
                 End If
                 If ComboBox3.SelectedItem = ComboBox3.Items.Item(0) Then
                     Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
                     Writer.Position = &H5E8
                     Writer.WriteUInt16(1)
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                        fdialog.Label1.Text = "The fisrt level of World 1 has been succesfully unlocked"
+                        fdialog.Label1.Text = "The fisrt level of World 1 has been successfully unlocked"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
                         fdialog.Label1.Text = "Le premier niveau du Monde 1 a été débloqué avec succès"
                         fdialog.ShowDialog()
                     End If
+                    CheckBox4.Checked = False
                 End If
             End If
         Catch Ex As Exception
@@ -2581,7 +2594,146 @@ Public Class Form1
     End Sub
 
     Private Sub CheckBox7_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox7.CheckedChanged
-
+        Try
+            If CheckBox7.Checked = True Then
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 20 Step 4
+                        Writer.Position = &H5E8 + i
+                        Writer.WriteUInt32(6141)
+                    Next
+                    Writer.Position = &H600
+                    Writer.WriteUInt32(1)
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 1 have been successfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 1 ont été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox7.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 20 Step 4
+                        Writer.Position = &H604 + i
+                        Writer.WriteUInt32(6141)
+                    Next
+                    Writer.Position = &H61C
+                    Writer.WriteUInt32(1)
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 2 have been successfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 2 ont été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox7.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 20 Step 4
+                        Writer.Position = &H620 + i
+                        Writer.WriteUInt32(6141)
+                    Next
+                    Writer.Position = &H638
+                    Writer.WriteUInt32(1)
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 3 have been successfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 3 ont été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox7.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 20 Step 4
+                        Writer.Position = &H63C + i
+                        Writer.WriteUInt32(6141)
+                    Next
+                    Writer.Position = &H654
+                    Writer.WriteUInt32(1)
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 4 have been successfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 4 ont été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox7.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(4) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 20 Step 4
+                        Writer.Position = &H658 + i
+                        Writer.WriteUInt32(6141)
+                    Next
+                    Writer.Position = &H670
+                    Writer.WriteUInt32(1)
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 5 have been successfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 5 ont été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox7.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(5) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 20 Step 4
+                        Writer.Position = &H674 + i
+                        Writer.WriteUInt32(6141)
+                    Next
+                    Writer.Position = &H68C
+                    Writer.WriteUInt32(1)
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 6 have been successfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 6 ont été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox7.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(6) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 20 Step 4
+                        Writer.Position = &H690 + i
+                        Writer.WriteUInt32(6141)
+                    Next
+                    Writer.Position = &H6A8
+                    Writer.WriteUInt32(1)
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 7 have been successfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 7 ont été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox7.Checked = False
+                End If
+            End If
+        Catch ex As Exception
+            If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                fdialog.Label1.Text = "Load a save file first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                fdialog.Label1.Text = "Ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            CheckBox7.Checked = False
+        End Try
     End Sub
 
     Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
@@ -2606,5 +2758,263 @@ Public Class Form1
         If ComboBox3.SelectedItem = ComboBox3.Items.Item(6) Then
             NumericUpDown12.Value = 7
         End If
+    End Sub
+
+    Private Sub CheckBox5_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox5.CheckedChanged
+        Try
+            If CheckBox5.Checked = True Then
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 24 Step 4
+                        Writer.Position = &H5E8 + i
+                        Writer.WriteUInt32(1)
+                    Next
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 1 have been successfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 1 ont été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox5.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 24 Step 4
+                        Writer.Position = &H604 + i
+                        Writer.WriteUInt32(1)
+                    Next
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 2 have been successfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 2 ont été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox5.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 24 Step 4
+                        Writer.Position = &H620 + i
+                        Writer.WriteUInt32(1)
+                    Next
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 3 have been successfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 3 ont été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox5.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 24 Step 4
+                        Writer.Position = &H63C + i
+                        Writer.WriteUInt32(1)
+                    Next
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 4 have been successfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 4 ont été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox5.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(4) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 24 Step 4
+                        Writer.Position = &H658 + i
+                        Writer.WriteUInt32(1)
+                    Next
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 5 have been successfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 5 ont été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox5.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(5) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 24 Step 4
+                        Writer.Position = &H674 + i
+                        Writer.WriteUInt32(1)
+                    Next
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 6 have been successfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 6 ont été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox5.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(6) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 24 Step 4
+                        Writer.Position = &H690 + i
+                        Writer.WriteUInt32(1)
+                    Next
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 7 have been successfully unlocked"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 7 ont été débloqué avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox5.Checked = False
+                End If
+            End If
+        Catch ex As Exception
+            If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                fdialog.Label1.Text = "Load a save file first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                fdialog.Label1.Text = "Ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            CheckBox5.Checked = False
+        End Try
+    End Sub
+
+    Private Sub CheckBox6_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox6.CheckedChanged
+        Try
+            If CheckBox6.Checked = True Then
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 24 Step 4
+                        Writer.Position = &H5E8 + i
+                        Writer.WriteUInt32(0)
+                    Next
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 1 have been successfully deleted"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 1 ont été supprimer avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox6.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 24 Step 4
+                        Writer.Position = &H604 + i
+                        Writer.WriteUInt32(0)
+                    Next
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 2 have been successfully deleted"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 2 ont été supprimer avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox6.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 24 Step 4
+                        Writer.Position = &H620 + i
+                        Writer.WriteUInt32(0)
+                    Next
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 3 have been successfully deleted"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 3 ont été supprimer avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox6.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 24 Step 4
+                        Writer.Position = &H63C + i
+                        Writer.WriteUInt32(0)
+                    Next
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 4 have been successfully deleted"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 4 ont été supprimer avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox6.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(4) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 24 Step 4
+                        Writer.Position = &H658 + i
+                        Writer.WriteUInt32(0)
+                    Next
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 5 have been successfully deleted"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 5 ont été supprimer avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox6.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(5) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 24 Step 4
+                        Writer.Position = &H674 + i
+                        Writer.WriteUInt32(0)
+                    Next
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 6 have been successfully deleted"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 6 ont été supprimer avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox6.Checked = False
+                End If
+                If ComboBox3.SelectedItem = ComboBox3.Items.Item(6) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 24 Step 4
+                        Writer.Position = &H690 + i
+                        Writer.WriteUInt32(0)
+                    Next
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                        fdialog.Label1.Text = "All levels of World 7 have been successfully deleted"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                        fdialog.Label1.Text = "Tous les niveaux du Monde 7 ont été supprimer avec succès"
+                        fdialog.ShowDialog()
+                    End If
+                    CheckBox6.Checked = False
+                End If
+            End If
+        Catch ex As Exception
+            If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+                fdialog.Label1.Text = "Load a save file first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+                fdialog.Label1.Text = "Ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            CheckBox6.Checked = False
+        End Try
     End Sub
 End Class
