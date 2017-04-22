@@ -2442,6 +2442,19 @@ Public Class Form1
     Private Sub Combobox1_MouseLeave(sender As Object, e As EventArgs) Handles ComboBox1.MouseLeave
         Label8.Visible = False
     End Sub
+    Private Sub CheckBox4_MouseMove(sender As Object, e As EventArgs) Handles CheckBox4.MouseMove, CheckBox5.MouseMove, CheckBox6.MouseMove, CheckBox7.MouseMove
+        If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+            Label8.Text = "Trophies for this/all level(s) will be deleted"
+        End If
+        If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+            Label8.Text = "Les trophées pour ce/ces niveau(x) seront supprimés"
+        End If
+        Label8.Visible = True
+    End Sub
+
+    Private Sub CheckBox4_MouseLeave(sender As Object, e As EventArgs) Handles CheckBox4.MouseLeave, CheckBox5.MouseLeave, CheckBox6.MouseLeave, CheckBox7.MouseLeave
+        Label8.Visible = False
+    End Sub
 
     Private Sub CheckBox4_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox4.CheckedChanged
         Try
