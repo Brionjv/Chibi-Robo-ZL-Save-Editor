@@ -1,6 +1,6 @@
 # Chibi-Robo-ZL-Save-Editor
 
-![Main windows](https://i58.servimg.com/u/f58/19/11/94/79/chibi-10.png)
+![Main windows](https://i58.servimg.com/u/f58/19/11/94/79/chibi-11.png)
 
 # How to use : 
 - Extract your save with a homebrew (JK's Save Manager or other)
