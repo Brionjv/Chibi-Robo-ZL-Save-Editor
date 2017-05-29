@@ -534,7 +534,7 @@ Partial Class Form1
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage2.Size = New System.Drawing.Size(360, 208)
         Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Extra"
+        Me.TabPage2.Text = "Extras"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
         'Panel7
@@ -608,7 +608,7 @@ Partial Class Form1
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(69, 13)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Version 1.4.1"
+        Me.Label2.Text = "Version 1.4.2"
         '
         'PictureBox5
         '

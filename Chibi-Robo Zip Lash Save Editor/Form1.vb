@@ -474,8 +474,7 @@ Public Class Form1
             Button1.Text = "Open"
             Button2.Text = "Save"
             TabPage1.Text = "Main"
-            TabPage2.Text = "Extra"
-            TabPage2.Text = "Worlds Edit"
+            TabPage3.Text = "Worlds Edit"
             Label7.Text = "Inventory"
             Label7.Location = New Point(39, 10)
             CheckBox1.Text = "Access to the floor unlocked"
@@ -697,7 +696,6 @@ Public Class Form1
             Button1.Text = "Ouvrir"
             Button2.Text = "Enregistrer"
             TabPage1.Text = "Principal"
-            TabPage2.Text = "Extra"
             TabPage3.Text = "Edition Mondes"
             Label7.Text = "Inventaire"
             Label7.Location = New Point(37, 10)
