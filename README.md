@@ -19,3 +19,6 @@
 
 # Releases :
 https://github.com/Brionjv/Chibi-Robo-ZL-Save-Editor/releases
+
+# Page :
+https://gbatemp.net/threads/wip-chibi-robo-zip-lash-save-editor.409040/
