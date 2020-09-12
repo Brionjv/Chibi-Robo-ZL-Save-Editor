@@ -54,8 +54,8 @@ Partial Class Form6
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(244, 52)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Special thanks to :" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Bangaio (gbatemp.net) for 100 % save file" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Visual Basic 20" & _
-    "10 - Visual Studio 2012"
+        Me.Label2.Text = "Special thanks to :" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Bangaio (gbatemp.net) for 100 % save file" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Visual Basic 20" &
+    "10 - Visual Studio 2012/19" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Modified by Kranberri"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox1
