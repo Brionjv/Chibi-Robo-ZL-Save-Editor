@@ -1,4 +1,4 @@
-# Chibi-Robo-ZL-Save-Editor
+# Chibi-Robo ZL Save Editor
 
 ![Main Window](https://i.imgur.com/bbu8ypi.png)
 
