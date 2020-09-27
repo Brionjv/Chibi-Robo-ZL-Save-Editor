@@ -177,7 +177,7 @@
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
         If Form1.ComboBox1.SelectedItem = Form1.ComboBox1.Items.Item(0) Then
-            fdialog.Label1.Text = "Click for edit items (appears when 6-F is unlocked)"
+            fdialog.Label1.Text = "Click to edit items (appears when 6-F is unlocked)"
             fdialog.ShowDialog()
         End If
         If Form1.ComboBox1.SelectedItem = Form1.ComboBox1.Items.Item(1) Then
@@ -188,7 +188,7 @@
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         If Form1.ComboBox1.SelectedItem = Form1.ComboBox1.Items.Item(0) Then
-            fdialog.Label1.Text = "Click for edit items"
+            fdialog.Label1.Text = "Click to edit items"
             fdialog.ShowDialog()
         End If
         If Form1.ComboBox1.SelectedItem = Form1.ComboBox1.Items.Item(1) Then

@@ -6,10 +6,10 @@
             Label7.Location = New Point(48, 10)
             RadioButton1.Text = "Link"
             RadioButton2.Text = "Unlink"
-            RadioButton4.Text = "Do nothing"
+            RadioButton4.Text = "Do Nothing"
             RadioButton7.Text = "Unlock"
             RadioButton5.Text = "Delete"
-            RadioButton6.Text = "Do nothing"
+            RadioButton6.Text = "Do Nothing"
         End If
         If Form1.ComboBox1.SelectedItem = Form1.ComboBox1.Items.Item(1) Then
             Label7.Text = "Fermer"
@@ -86,7 +86,7 @@
     End Sub
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         If Form1.ComboBox1.SelectedItem = Form1.ComboBox1.Items.Item(0) Then
-            fdialog.Label1.Text = "Since the selection file game" & vbNewLine & "Access to amiibo's menu for unlock extras amiibo"
+            fdialog.Label1.Text = "Unlock in-game extras normally" & vbNewLine & "unlocked by scanning an Amiibo"
             fdialog.ShowDialog()
         End If
         If Form1.ComboBox1.SelectedItem = Form1.ComboBox1.Items.Item(1) Then

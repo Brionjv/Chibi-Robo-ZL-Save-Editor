@@ -7,7 +7,7 @@ Public Class Form1
         Dim open As New OpenFileDialog
         open.Title = "Open save C3_SAVEDATA_X"
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-            fdialog.Label1.Text = "Open C3_SAVEDATA_0, C3_SAVEDATA_1" & vbNewLine & "or C3_SAVEDATA_2" & vbNewLine & "Backup your save before use" & vbNewLine & "Chibi-Robo Zip Lash Save Editor"
+            fdialog.Label1.Text = "Open C3_SAVEDATA_0, C3_SAVEDATA_1" & vbNewLine & "or C3_SAVEDATA_2" & vbNewLine & "Backup your save before using the" & vbNewLine & "Chibi-Robo Zip Lash Save Editor"
             fdialog.ShowDialog()
         End If
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
@@ -449,7 +449,7 @@ Public Class Form1
             End If
         Catch ex As Exception
             If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                fdialog.Label1.Text = "C3_SAVEDATA_0, C3_SAVEDATA_1 or" & vbNewLine & "C3_SAVEDATA_2 not load successfully" & vbNewLine & "Save file is probably corrupted or" & vbNewLine & "not a Chibi-Robo Zip Lash save"
+                fdialog.Label1.Text = "The save did not load successfully" & vbNewLine & "the save file is probably corrupted or" & vbNewLine & "not a valid Zip Lash save," & vbNewLine & "or you didn't select one"
                 fdialog.ShowDialog()
             End If
             If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
@@ -477,13 +477,13 @@ Public Class Form1
             TabPage3.Text = "Worlds Edit"
             Label7.Text = "Inventory"
             Label7.Location = New Point(39, 10)
-            CheckBox1.Text = "Access to the floor unlocked"
+            CheckBox1.Text = "Access to the 2nd floor unlocked"
             CheckBox2.Text = "Unlock all figurines info."
             CheckBox3.Text = "Unlock all figurines"
             CheckBox4.Text = "Unlock level 1"
             CheckBox5.Text = "Unlock all levels"
             CheckBox6.Text = "Delete all levels"
-            CheckBox7.Text = "All levels with all Chibi-tot and coins"
+            CheckBox7.Text = "All levels with all Chibi-Tots and Big Coins"
             If NumericUpDown4.Value = 0 And NumericUpDown5.Value = 0 Then
                 Label1.Text = "0 - 0"
                 Label5.Text = "Shipping Out From the Station"
@@ -2291,7 +2291,7 @@ Public Class Form1
                 Writer.Position = &H2BF5
                 Writer.WriteInt16(200)
                 If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                    fdialog.Label1.Text = "All figurines has been successfully unlocked"
+                    fdialog.Label1.Text = "All figurines have been successfully unlocked"
                     fdialog.ShowDialog()
                 End If
                 If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
@@ -2321,7 +2321,7 @@ Public Class Form1
                     Writer.WriteUInt16(65535)
                 Next
                 If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                    fdialog.Label1.Text = "All figurines info. in album has been successfully unlocked"
+                    fdialog.Label1.Text = "All figurine info. in the album has been unlocked successfully"
                     fdialog.ShowDialog()
                 End If
                 If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
@@ -2343,7 +2343,7 @@ Public Class Form1
     End Sub
     Private Sub PictureBox3_MouseMove(sender As Object, e As EventArgs) Handles PictureBox3.MouseMove
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-            Label8.Text = "Click for traveling (edit spaceship location)"
+            Label8.Text = "Click to travel (edit spaceship location)"
         End If
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
             Label8.Text = "Cliquez pour voyager (éditer l'emplacement du vaisseau)"
@@ -2369,7 +2369,7 @@ Public Class Form1
     End Sub
     Private Sub Label4_MouseMove(sender As Object, e As EventArgs) Handles Label4.MouseMove, NumericUpDown2.MouseMove
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-            Label8.Text = "Percentage achievement reached"
+            Label8.Text = "Level Completion Percent"
         End If
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
             Label8.Text = "Poucentage atteint de la sauvegarde"
@@ -2382,7 +2382,7 @@ Public Class Form1
     End Sub
     Private Sub PictureBox5_MouseMove(sender As Object, e As EventArgs) Handles PictureBox5.MouseMove
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-            Label8.Text = "Click for show credits"
+            Label8.Text = "Click to show Credits"
         End If
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
             Label8.Text = "Cliquez pour afficher les crédits"
@@ -2395,7 +2395,7 @@ Public Class Form1
     End Sub
     Private Sub Panel2_MouseMove(sender As Object, e As EventArgs) Handles Panel2.MouseMove
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-            Label8.Text = "Click for Unlock extras amiibo or link an amiibo"
+            Label8.Text = "Click to unlock Amiibo extras or link/unlink an Amiibo"
         End If
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
             Label8.Text = "Cliquez pour débloquer les extras amiibo ou lier un amiibo"
@@ -2408,7 +2408,7 @@ Public Class Form1
     End Sub
     Private Sub Panel3_MouseMove(sender As Object, e As EventArgs) Handles Panel3.MouseMove, Label7.MouseMove
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-            Label8.Text = "Click for edit the inventory"
+            Label8.Text = "Click to edit your Inventory"
         End If
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
             Label8.Text = "Cliquez pour éditer l'inventaire"
@@ -2420,7 +2420,7 @@ Public Class Form1
         Label8.Visible = False
     End Sub
     Private Sub Panel4_MouseMove(sender As Object, e As EventArgs) Handles Panel4.MouseMove, NumericUpDown3.MouseMove
-        Label8.Text = "Watt"
+        Label8.Text = "House Watts"
         Label8.Visible = True
     End Sub
 
@@ -2429,7 +2429,7 @@ Public Class Form1
     End Sub
     Private Sub Combobox1_MouseMove(sender As Object, e As EventArgs) Handles ComboBox1.MouseMove
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-            Label8.Text = "Click for change Chibi-Robo ZL Save Editor Language"
+            Label8.Text = "Click to change Chibi-Robo ZL Save Editor Language"
         End If
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
             Label8.Text = "Cliquez pour changer la langue de Chibi-Robo ZL Save Editor"
@@ -2440,9 +2440,18 @@ Public Class Form1
     Private Sub Combobox1_MouseLeave(sender As Object, e As EventArgs) Handles ComboBox1.MouseLeave
         Label8.Visible = False
     End Sub
-    Private Sub CheckBox4_MouseMove(sender As Object, e As EventArgs) Handles CheckBox4.MouseMove, CheckBox5.MouseMove, CheckBox6.MouseMove, CheckBox7.MouseMove
+    Private Sub CheckBox4_MouseMove(sender As Object, e As EventArgs) Handles CheckBox4.MouseMove
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-            Label8.Text = "Trophies for this/all level(s) will be deleted"
+            Label8.Text = "Trophies for this level will be deleted"
+        End If
+        If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
+            Label8.Text = "Les trophées pour ce/ces niveau(x) seront supprimés"
+        End If
+        Label8.Visible = True
+    End Sub
+    Private Sub CheckBox5_MouseMove(sender As Object, e As EventArgs) Handles CheckBox5.MouseMove, CheckBox6.MouseMove, CheckBox7.MouseMove
+        If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
+            Label8.Text = "Trophies for all levels will be deleted"
         End If
         If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
             Label8.Text = "Les trophées pour ce/ces niveau(x) seront supprimés"
@@ -2462,7 +2471,7 @@ Public Class Form1
                     Writer.Position = &H690
                     Writer.WriteUInt16(1)
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                        fdialog.Label1.Text = "The fisrt level of World 7 has been successfully unlocked"
+                        fdialog.Label1.Text = "The first level of World 7 has been successfully unlocked"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
@@ -2476,7 +2485,7 @@ Public Class Form1
                     Writer.Position = &H674
                     Writer.WriteUInt16(1)
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                        fdialog.Label1.Text = "The fisrt level of World 6 has been successfully unlocked"
+                        fdialog.Label1.Text = "The first level of World 6 has been successfully unlocked"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
@@ -2490,7 +2499,7 @@ Public Class Form1
                     Writer.Position = &H658
                     Writer.WriteUInt16(1)
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                        fdialog.Label1.Text = "The fisrt level of World 5 has been successfully unlocked"
+                        fdialog.Label1.Text = "The first level of World 5 has been successfully unlocked"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
@@ -2504,7 +2513,7 @@ Public Class Form1
                     Writer.Position = &H63C
                     Writer.WriteUInt16(1)
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                        fdialog.Label1.Text = "The fisrt level of World 4 has been successfully unlocked"
+                        fdialog.Label1.Text = "The first level of World 4 has been successfully unlocked"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
@@ -2518,7 +2527,7 @@ Public Class Form1
                     Writer.Position = &H620
                     Writer.WriteUInt16(1)
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                        fdialog.Label1.Text = "The fisrt level of World 3 has been successfully unlocked"
+                        fdialog.Label1.Text = "The first level of World 3 has been successfully unlocked"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
@@ -2532,7 +2541,7 @@ Public Class Form1
                     Writer.Position = &H604
                     Writer.WriteUInt16(1)
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                        fdialog.Label1.Text = "The fisrt level of World 2 has been successfully unlocked"
+                        fdialog.Label1.Text = "The first level of World 2 has been successfully unlocked"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
@@ -2546,7 +2555,7 @@ Public Class Form1
                     Writer.Position = &H5E8
                     Writer.WriteUInt16(1)
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(0) Then
-                        fdialog.Label1.Text = "The fisrt level of World 1 has been successfully unlocked"
+                        fdialog.Label1.Text = "The first level of World 1 has been successfully unlocked"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox1.SelectedItem = ComboBox1.Items.Item(1) Then
