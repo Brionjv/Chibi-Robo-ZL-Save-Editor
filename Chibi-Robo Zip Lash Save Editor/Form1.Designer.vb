@@ -608,7 +608,7 @@ Partial Class Form1
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(69, 13)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Version 1.4.3"
+        Me.Label2.Text = "Version 1.4.2"
         '
         'PictureBox5
         '
